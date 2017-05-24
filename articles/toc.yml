@@ -1,0 +1,495 @@
+- name: Introduction
+  href: intro.md
+  items:
+    - name: Figaro Overview
+      href: figaro-overview.md
+    - name: Basic Concepts
+      href: basic-concepts.md
+    - name: Product Editions
+      href: product-editions.md
+    - name: XML Features
+      href: xml-features.md
+    - name: Database Features
+      href: database-features.md
+    - name: Languages and Platforms
+      href: languages-and-platforms.md
+    - name: Library Dependencies
+      href: library-dependencies.md
+    - name: Benefits
+      href: benefits.md
+    - name: XML Resources
+      href: xml-resources.md
+    - name: XQuery Resources
+      href: xquery-resources.md
+- name: Exploring Figaro and XQuery Using the dbxml Shell
+  href: figaro-and-xquery.md
+  items:
+    - name: Running the Shell
+      href: running-the-shell.md
+    - name: Adding Data
+      href: adding-data.md
+    - name: Queries Involving Document Structure
+      href: queries-involving-document-structure.md
+    - name: Value Queries
+      href: value-queries.md
+    - name: Introducing Indices
+      href: introducing-indices.md
+    - name: Reshaping the Result
+      href: reshaping-the-result.md
+    - name: Sorting the Result
+      href: sorting-the-result.md
+    - name: Working with Data from Containers
+      href: working-with-data-from-containers.md
+    - name: Working with Data from a Specific Document
+      href: working-with-data-from-a-specific-document.md
+    - name: Using Metadata
+      href: using-metadata.md
+    - name: Modifying Documents
+      href: modifying-documents.md
+    - name: Schema Constraints
+      href: schema-constraints.md      
+- name: Developing .NET Applications with Figaro
+  href: developing-dotnet-apps-with-figaro.md
+  items:
+      - name: Project Setup
+        href: project-setup.md
+      - name: Cache and Locking Size Considerations
+        href: cache-and-locking-size-considerations.md
+        items:
+            - name: Selecting a Cache Size
+              href: selecting-a-cache-size.md
+            - name: "Configuring Locking: Sizing the System"
+              href: configuring-locking-sizing-the-system.md
+- name: XML Manager and Environments
+  href: xml-manager-and-environments.md
+  items:
+    - name: XmlManager
+      href: xmlmanager.md
+    - name: Berkeley DB Environments
+      href: berkeley-db-environments.md
+    - name: Environment Open Flags
+      href: environment-open-flags.md
+    - name: Opening and Closing Environments
+      href: opening-and-closing-environments.md
+    - name: XmlManager Instantiation and Destruction
+      href: xmlmanager-instantiation-and-destruction.md
+- name: XmlManager and Containers
+  href: xmlmanager-and-containers.md
+  items:
+    - name: Managing Containers 
+      href: managing-containers.md
+    - name: Container Properties 
+      href: container-properties.md
+    - name: Container Types 
+      href: container-types.md
+    - name: Deleting and Renaming Containers 
+      href: deleting-and-renaming-containers.md
+    - name: Adding XML Documents to Containers 
+      href: adding-xml-documents-to-containers.md
+    - name: Input Streams and Strings 
+      href: input-streams-and-strings.md
+    - name: Adding Documents 
+      href: adding-documents.md
+    - name: Adding Metadata 
+      href: adding-metadata.md
+- name: Using XQuery 
+  href: using-xquery.md
+  items:
+    - name: "XQuery: A Brief Introduction"
+      href: xquery-a-brief-introduction.md
+    - name: Referencing Portions of Documents Using XQuery 
+      href: referencing-portions-of-documents-using-xquery.md
+    - name: Using FLWOR 
+      href: using-flwor.md
+    - name: Retrieving Data Using XQuery 
+      href: retrieving-data-using-xquery.md
+      items:
+      - name: The Query Context 
+        href: the-query-context.md
+      - name: Defining Namespaces 
+        href: defining-namespaces.md
+      - name: Defining Variables 
+        href: defining-variables.md
+      - name: Defining the Evaluation Type 
+        href: defining-the-evaluation-type.md
+    - name: Performing Queries 
+      href: performing-queries.md
+      items:
+      - name: Metadata Based Queries 
+        href: metadata-based-queries.md
+      - name: Examining Query Results
+        href: examining-query-results.md
+    - name: Working with External Functions 
+      href: working-with-external-functions.md
+      items:
+      - name: Implementing XmlExternalFunction 
+        href: implementing-xmlexternalfunction.md
+      - name: Implementing XQueryResolver 
+        href: implementing-xqueryresolver.md
+      - name: Calling External Functions from XQuery 
+        href: calling-external-functions-from-xquery.md
+    - name: Examining Document Query Results 
+      href: examining-document-query-results.md
+      items:
+        - name: Examining Document Values 
+          href: examining-document-values.md
+        - name: Examining Metadata 
+          href: examining-metadata.md
+    - name: Managing XML Data in Containers 
+      href: managing-xml-data-in-containers.md
+      items:
+        - name: Deleting Records 
+          href: deleting-records.md
+        - name: Replacing XML in Records 
+          href: replacing-xml-in-records.md
+        - name: Modifying XML Data 
+          href: modifying-xml-data.md
+    - name: Using XQuery Update 
+      href: using-xquery-update.md
+      items:
+        - name: Inserting Nodes 
+          href: inserting-nodes.md
+        - name: Position Keywords 
+          href: position-keywords.md
+        - name: Insertion Rules 
+          href: insertion-rules.md
+        - name: Deleting Nodes 
+          href: deleting-nodes.md
+        - name: Replacing Nodes 
+          href: replacing-nodes.md
+        - name: Replacement Rules 
+          href: replacement-rules.md
+        - name: Renaming Nodes 
+          href: renaming-nodes.md
+        - name: Updating Functions 
+          href: updating-functions.md
+        - name: Transform Functions 
+          href: transform-functions.md
+    - name: Resolving Conflicting Updates 
+      href: resolving-conflicting-updates.md
+- name: Using Container Compression 
+  href: using-container-compression.md
+- name: Using Indices 
+  href: using-indices.md
+  items:
+    - name: Index Types 
+      href: index-types.md
+      items:
+        - name: Uniqueness 
+          href: uniqueness.md
+        - name: Path Types 
+          href: path-types.md
+        - name: Node Types 
+          href: node-types.md
+        - name: Key Types 
+          href: key-types.md
+        - name: Syntax Types 
+          href: syntax-types.md
+- name: Specifying Index Nodes 
+  href: specifying-index-nodes.md
+- name: Specifying Index Strategies 
+  href: specifying-index-strategies.md
+- name: Indexer Processing Notes 
+  href: indexer-processing-notes.md
+- name: Managing Indices 
+  href: managing-indices.md
+  items:
+    - name: Adding Indices 
+      href: adding-indices.md
+    - name: Deleting Indices 
+      href: deleting-indices.md
+    - name: Replacing Indices 
+      href: replacing-indices.md
+- name: Verifying Indices Using Query Plans 
+  href: verifying-indices-using-query-plans.md
+- name: Examining Indices 
+  href: examining-indices.md
+- name: Working with Default Indices 
+  href: working-with-default-indices.md
+- name: Looking Up Indexed XML Data 
+  href: looking-up-indexed-xml-data.md
+- name: Administering Apps   
+  href: administering-apps.md
+  items:
+    - name: Temporary Files 
+      href: temporary-files.md
+    - name: A Note on Snapshot Isolation (MVCC) 
+      href: a-note-on-snapshot-isolation-mvcc.md
+    - name: Upgrading Databases 
+      href: upgrading-databases.md
+- name: Design and Usage Considerations 
+  href: design-and-usage-considerations.md
+  items:
+    - name: Selecting a Cache Size 
+      href: selecting-a-cache-size.md
+    - name: "Configuring Locking: Sizing the System" 
+      href: configuring-locking-sizing-the-system.md
+- name: Getting Started with Concurrent and Transactional Processing 
+  href: getting-started-with-concurrent-and-transactional-processing.md
+  items:
+  - name: Introduction 
+    href: introduction.md
+  - name: Why Transactions? 
+    href: why-transactions.md
+    items:
+      - name: Atomicity 
+        href: atomicity.md
+      - name: Consistency 
+        href: consistency.md
+      - name: Isolation 
+        href: isolation.md
+      - name: Durability 
+        href: durability.md
+  - name: Terminology 
+    href: terminology.md
+  - name: Application Requirements 
+    href: application-requirements.md
+  - name: A Note on System Failure 
+    href: a-note-on-system-failure.md
+  - name: Enabling Transactions 
+    href: enabling-transactions.md    
+  - name: Environments 
+    href: environments.md
+    items:
+      - name: File Naming 
+        href: file-naming.md
+      - name: Shared Memory Regions   
+        href: shared-memory-regions.md
+      - name: Security Considerations 
+        href: security-considerations.md
+  - name: System Shared Memory on Windows 
+    href: system-shared-memory-on-windows.md
+  - name: Opening a Transactional Environment and Container 
+    href: opening-a-transactional-environment-and-container.md
+  - name: Opening Berkeley DB Databases 
+    href: opening-berkeley-db-databases.md
+  - name: Transaction Basics 
+    href: transaction-basics.md
+    items:
+    - name: Committing a Transaction 
+      href: committing-a-transaction.md
+    - name: Non-Durable Transactions 
+      href: non-durable-transactions.md
+    - name: Aborting a Transaction 
+      href: aborting-a-transaction.md
+    - name: AutoCommit 
+      href: autocommit.md
+    - name: Nested Transactions 
+      href: nested-transactions.md
+  - name: Configuring the Transaction Subsystem 
+    href: configuring-the-transaction-subsystem.md
+  - name: Transactional Data Store Applications 
+    href: transactional-data-store-applications.md
+    items:
+    - name: Database Recoverability 
+      href: database-recoverability.md
+    - name: Architecting Figaro TDS Applications 
+      href: architecting-figaro-tds-applications.md
+    - name: Transaction Throughput 
+      href: transaction-throughput.md
+    - name: Handling Failure in Figaro TDS Applications 
+      href: handling-failure-in-figaro-tds-applications.md
+  - name: Performance Tuning 
+    href: performance-tuning.md
+    items:
+    - name: Transaction Tuning 
+      href: transaction-tuning.md
+    - name: Environment Tuning 
+      href: environment-tuning.md
+  - name: Concurrency 
+    href: concurrency.md
+    items:
+    - name: Which Handles are Free-Threaded? 
+      href: which-handles-are-free-threaded.md
+    - name: Locks, Blocks, and Deadlocks 
+      href: locks-blocks-and-deadlocks.md
+      items:
+      - name: Locks 
+        href: locks.md
+      - name: Blocks 
+        href: blocks.md
+      - name: Deadlocks 
+        href: deadlocks.md
+    - name: The Locking Subsystem 
+      href: the-locking-subsystem.md
+      items:
+      - name: Configuring the Locking Subsystem 
+        href: configuring-the-locking-subsystem.md
+      - name: Configuring Deadlock Detection 
+        href: configuring-deadlock-detection.md
+      - name: Resolving Deadlocks 
+        href: resolving-deadlocks.md
+    - name: Isolation 
+      href: tx-isolation.md
+      items:
+      - name: Supported Degrees of Isolation 
+        href: supported-degrees-of-isolation.md
+      - name: Reading Uncommitted Data 
+        href: reading-uncommitted-data.md
+      - name: Committed Reads   
+        href: committed-reads.md
+      - name: Snapshot Isolation 
+        href: snapshot-isolation.md
+    - name: Read/Modify/Write 
+      href: readmodifywrite.md
+    - name: No Wait on Transaction Blocks 
+      href: no-wait-on-transaction-blocks.md
+  - name: Managing Database Files 
+    href: managing-database-files.md
+    items:
+    - name: Checkpoints 
+      href: checkpoints.md
+    - name: Backup Procedures 
+      href: backup-procedures.md
+      items:
+      - name: Offline Backups 
+        href: offline-backups.md
+      - name: Hot Backup 
+        href: hot-backup.md
+      - name: Incremental Backups 
+        href: incremental-backups.md
+    - name: Database Recovery Procedures 
+      href: database-recovery-procedures.md
+      items:
+      - name: Normal Recovery 
+        href: normal-recovery.md
+      - name: Catastrophic Recovery 
+        href: catastrophic-recovery.md
+    - name: Recoverability and Deadlock Handling 
+      href: recoverability-and-deadlock-handling.md
+    - name: Designing Your Application for Recovery 
+      href: designing-your-application-for-recovery.md
+      items:
+      - name: Recovery for Multi-Threaded Applications 
+        href: recovery-for-multi-threaded-applications.md
+      - name: Recovery for Multi-Process Applications 
+        href: recovery-for-multi-process-applications.md
+    - name: Using Hot Failovers 
+      href: using-hot-failovers.md
+    - name: Removing Log Files 
+      href: removing-log-files.md
+    - name: Configuring the Logging Subsystem 
+      href: configuring-the-logging-subsystem.md
+      items:
+      - name: Setting the Log File Size 
+        href: setting-the-log-file-size.md
+      - name: Configuring the Logging Region Size   
+        href: configuring-the-logging-region-size.md
+      - name: Configuring In-Memory Logging 
+        href: configuring-in-memory-logging.md
+      - name: Setting the In-Memory Log Buffer Size 
+        href: setting-the-in-memory-log-buffer-size.md
+      - name: Log File Limits 
+        href: log-file-limits.md
+  - name: Environment Administrative Infrastructure 
+    href: environment-administrative-infrastructure.md
+    items:
+    - name: Deadlock Detection 
+      href: deadlock-detection.md
+    - name: Checkpoints 
+      href: using-checkpoints.md
+    - name: Database and Log File Archival 
+      href: database-and-log-file-archival.md
+    - name: Recovery Procedures 
+      href: recovery-procedures.md
+  - name: Summary and Examples 
+    href: summary-and-examples.md
+    items:
+    - name: Anatomy of a Transactional Application 
+      href: anatomy-of-a-transactional-application.md
+    - name: Transaction Example 
+      href: transaction-example.md
+    - name: The In-Memory Transaction Example 
+      href: the-in-memory-transaction-example.md
+    - name: Runtime Analysis 
+      href: runtime-analysis.md
+      items:
+      - name: Default Program Run 
+        href: default-program-run.md
+      - name: Varying the Node Size 
+        href: varying-the-node-size.md
+      - name: Using Wholedoc Storage 
+        href: using-wholedoc-storage.md
+      - name: Using ReadCommitted Isolation 
+        href: using-readcommitted-isolation.md
+      - name: Read Committed with Wholedoc Storage 
+        href: read-committed-with-wholedoc-storage.md
+  - name: Transaction FAQ 
+    href: transaction-faq.md
+- name: Replication Overview 
+  href: replication-overview.md
+  items:
+  - name: Introduction to Replication 
+    href: introduction-to-replication.md
+    items:
+    - name: Replication Benefits 
+      href: replication-benefits.md
+    - name: Replication Manager Overview 
+      href: replication-manager-overview.md
+    - name: Replication Elections 
+      href: replication-elections.md
+    - name: Permanent Message Handling 
+      href: permanent-message-handling.md
+    - name: Event Handling 
+      href: event-handling.md
+  - name: The Replication Manager 
+    href: the-replication-manager.md
+    items:
+    - name: The DBSite Handle 
+      href: the-dbsite-handle.md
+    - name: Managing Election Policies 
+      href: managing-election-policies.md
+    - name: Replication Manager Permanent Message Handling Policies 
+      href: replication-manager-permanent-message-handling-policies.md
+    - name: Managing Election Times 
+      href: managing-election-times.md
+    - name: Managing Connection Retries 
+      href: managing-connection-retries.md
+    - name: Managing Heartbeats 
+      href: managing-heartbeats.md
+  - name: Replica vs. Master Processes 
+    href: replica-vs-master-processes.md
+  - name: Additional Features 
+    href: additional-features.md
+    items:
+    - name: Client to Client Transfer 
+      href: client-to-client-transfer.md
+    - name: Delayed Synchronization 
+      href: delayed-synchronization.md
+    - name: Managing Blocking Operations 
+      href: managing-blocking-operations.md
+    - name: Stop Auto-Initialization 
+      href: stop-auto-initialization.md
+    - name: Bulk Transfers  
+      href: bulk-transfers.md
+- name: Utilities 
+  href: utilities.md
+  items:
+  - name: The dbxml Shell 
+    href: the-dbxml-shell.md
+  - name: The XQilla Command-Line Tool  
+    href: the-xqilla-command-line-tool.md
+  - name: db_archive 
+    href: db_archive.md
+  - name: db_checkpoint 
+    href: db_checkpoint.md
+  - name: db_deadlock 
+    href: db_deadlock.md
+  - name: dbxml_dump 
+    href: dbxml_dump.md
+  - name: dbxml_load 
+    href: dbxml_load.md
+  - name: db_printlog 
+    href: db_printlog.md
+  - name: db_recover 
+    href: db_recover.md
+  - name: db_stat 
+    href: db_stat.md
+  - name: db_upgrade 
+    href: db_upgrade.md
+  - name: db_verify 
+    href: db_verify.md
+  - name: dbxml_load_container 
+    href: dbxml_load_container.md
+  - name: db_hotbackup 
+    href: db_hotbackup.md
