@@ -10,7 +10,10 @@
             "**/obj/**",
             "**/bin/**",
             "**/.vs/**",
-            "_site/**"
+            "_site/**",
+            "**/.git/**",
+            ".gitattributes",
+            ".gitignore"
           ]
         }
       ],
@@ -34,7 +37,10 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "_site/**",
+            "**/.git/**",
+            ".gitattributes",
+            ".gitignore"
         ]
       }
     ],
@@ -45,7 +51,10 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "_site/**",
+            "**/.git/**",
+            ".gitattributes",
+            ".gitignore"
         ]
       }
     ],
@@ -56,7 +65,10 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "_site/**",
+            "**/.git/**",
+            ".gitattributes",
+            ".gitignore"
         ]
       }
     ],
