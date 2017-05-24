@@ -23,7 +23,7 @@ From an API-usage perspective, there are very few differences between whole docu
 Once a document has been placed in a container, you can use XQuery to retrieve one or more documents. You can also use XQuery to retrieve one or more portions of one or more documents. Queries are performed using [XmlManager](xref:Figaro.XmlManager) objects. The queries themselves, however, limit the scope of the query to a specified list of containers or documents.
 
 
-Figaro supports the entire XQuery specification. You can read the specification here: http://www.w3.org/TR/xquery . Because XQuery is an extension of XPath 2.0, XPath is also fully supported.
+Figaro supports the entire XQuery specification. You can read the specification here: https://www.w3.org/TR/2014/REC-xquery-30-20140408/ . Because XQuery is an extension of XPath 2.0, XPath is also fully supported.
 
 
 Finally, Figaro provides a robust document modification facility that allows you to easily add, delete, or modify selected portions of XML data. This means you can avoid writing modification code that manipulates (for example) DOM trees — Figaro can handle all those details for you.
@@ -32,7 +32,7 @@ Finally, Figaro provides a robust document modification facility that allows you
 
 #### Other Resources
 * [Introducing Figaro](xref:intro.md)
-* [XQuery Specification](http://www.w3.org/TR/xquery/)
+* [XQuery Specification](https://www.w3.org/TR/2014/REC-xquery-30-20140408//)
 * [Container Types](xref:container-types.md)
 * [XmlManager](xref:Figaro.XmlManager)
 * [Oracle Berkeley DB XML Product Website](http://www.oracle.com/technology/documentation/berkeley-db/xml/index.html) 

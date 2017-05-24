@@ -5,8 +5,8 @@ uid: xquery-resources.md
 # XQuery Resources
 
 ## W3C Specs
-* [XQuery 3.0 Specification](http://www.w3.org/TR/xquery/)
-* [XQuery Update](http://www.w3.org/TR/xquery-update-10/)
+* [XQuery 3.0 Specification](https://www.w3.org/TR/2014/REC-xquery-30-20140408//)
+* [XQuery Update](https://www.w3.org/TR/2014/REC-xquery-30-20140408/-update-10/)
 * [XPath 2.0](http://www.w3.org/TR/xpath20)
 
 ## Articles
