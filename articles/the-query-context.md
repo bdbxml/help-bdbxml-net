@@ -14,7 +14,8 @@ In Figaro, however, the context is a physical object (@Figaro.QueryContext) that
 Specifically, you use @Figaro.QueryContext to:
 * Define the namespaces to be used by the query.
 * Define any variables that might be needed for the query, although, these are not the same as the variables used by XQuery FLWOR expressions (see [Defining Variables](xref:defining-variables.md)).
-Defining whether the query is processed "eagerly" or "lazily" (see [Defining the Evaluation Type](xref:defining-the-evaluation-type.md)).
+* Define whether the query is processed "eagerly" or "lazily" (see [Defining the Evaluation Type](xref:defining-the-evaluation-type.md)).
+
 Note that Figaro also uses the @Figaro.QueryContext to identify the query's focus as you iterate over a result set. See [Performing Queries](xref:performing-queries.md) for more information.
 
 

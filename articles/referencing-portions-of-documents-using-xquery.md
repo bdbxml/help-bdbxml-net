@@ -75,13 +75,13 @@ Boolean predicates filter a query result so that only those elements of the resu
 ```
 
 
-#### Context
+## Context
 
 The meaning of an XQuery expression can change depending on the current context. Within XQuery expressions, context is usually only important if you want to use relative paths or if your documents use namespaces. However, Figaro only supports relative paths from within a predicate (see below). Also, do not confuse XQuery contexts with Figaro contexts. While Figaro contexts are related to XQuery contexts, they differ in that Figaro contexts are a data structure that allows you to define namespaces, define variables, and to identify the type of information that is returned as the result of a query (all of these topics are discussed later in this chapter).
 
 
 
-#### Relative Paths
+## Relative Paths
 
 Just like Unix file system paths, any path that does not begin with a slash (/) is relative to your current location in a document. Your current location in a document is determined by your context. Thus, if in the sample document your context is set to `Node2`, you can refer to `Node3` with the simple notation:
 
@@ -109,7 +109,7 @@ You can refer to the current node by using:
 >[!NOTE]
 >Figaro supports relative paths only from within predicates.
 
-#### Namespaces
+## Namespaces
 
 Natural language and, therefore, tag names can be imprecise. Two different tags can have identical names and yet hold entirely different sorts of information. Namespaces are intended to resolve any such sources of confusion.
 
@@ -264,7 +264,7 @@ Selects all of `Node5`'s attributes:
 ```
 
 
-#### Case Insensitive Searches
+## Case Insensitive Searches
 
 It is possible to perform a case-insensitive and diacritic insensitive match using Figaro's built-in function, `dbxml:contains()`. This function takes two parameters, both strings. The first identifies the attribute or element that you want to examine, and the second provides the string you want to match.
 
@@ -279,13 +279,13 @@ Note that searches performed using `dbxml:contains()` can be backed by Figaro's 
 
 
 
-#### Navigation Functions
+## Navigation Functions
 
 XQuery provides several functions that can be used for global navigation to a specific document or collection of documents. From the perspective of this manual, two of these are interesting because they have specific meaning from within the context of Figaro.
 
 
 
-#### collection()
+### collection()
 
 Within XQuery, `collection()` is a function that allows you to create a named sequence. From within Figaro, however, it is also used to navigate to a specific container. In this case, you must identify to `collection()` the literal name of the container. You do this either by passing the container name directly to the function, or by declaring a default container name using the @Figaro.QueryContext.DefaultCollection  property. Note that the container must have already been opened by the @Figaro.XmlManager in order for collection to reference that container. The exception to this is if @Figaro.XmlManager was opened using the @Figaro.ManagerInitOptions.AllowAutoOpen flag. For example, suppose you want to perform a query against a container named `container1.dbxml`. In this case, first open the container using @Figaro.XmlManager.OpenContainer(System.String) and then specify the `collection()` function on the query.
 
@@ -317,7 +317,7 @@ See [Retrieving Data using XQuery](xref:retrieving-data-using-xquery.md) for mor
 
 
 
-#### doc()
+### doc()
 
 XQuery provides the `doc()` function so that you can trivially navigate to the root of a named document. `doc()` is required to take a URI.
 
@@ -337,8 +337,6 @@ See [Retrieving Data Using XQuery](xref:retrieving-data-using-xquery.md) for mor
 
 ## See Also
 
-
-#### Other Resources
 * [Using XQuery](xref:using-xquery.md)
 * [Developing .NET Applications with Figaro](xref:developing-dotnet-apps-with-figaro.md)
 * [Retrieving Data using XQuery](xref:retrieving-data-using-xquery.md)

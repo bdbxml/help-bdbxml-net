@@ -8,17 +8,17 @@ The following table lists what Figaro handles are free-threaded.
 
 Figaro Object | Free Threaded?
 ------------- | --------------
-@Figaro.FigaroEnv<sup>1</sup> | ![yes](/images/checked.png)
+@Figaro.FigaroEnv <sup>1</sup> | ![yes](/images/checked.png)
 @Figaro.XmlManager | ![yes](/images/checked.png)
 @Figaro.Container | ![yes](/images/checked.png)
-@Figaro.XmlDebugListener<sup>2</sup> | ![yes](/images/checked.png)
+@Figaro.XmlDebugListener <sup>2</sup> | ![yes](/images/checked.png)
 @Figaro.XmlDocument | ![no](/images/unchecked.png)
 @Figaro.XmlIndexSpecification | ![no](/images/unchecked.png)
-@Figaro.XmlExternalFunction<sup>3</sup> | ![no](/images/unchecked.png)
+@Figaro.XmlExternalFunction <sup>3</sup> | ![no](/images/unchecked.png)
 @Figaro.XmlMetadataIterator | ![no](/images/unchecked.png)
 @Figaro.QueryContext | ![no](/images/unchecked.png)
 @Figaro.XQueryExpression | ![yes](/images/checked.png)
-@Figaro.XQueryResolver<sup>4</sup> | ![no](/images/unchecked.png)
+@Figaro.XQueryResolver <sup>4</sup> | ![no](/images/unchecked.png)
 @Figaro.XmlResults | ![no](/images/unchecked.png)
 @Figaro.KeyStatistics | ![no](/images/unchecked.png)
 @Figaro.XmlTransaction <sup>5</sup> | ![no](/images/unchecked.png)
@@ -30,7 +30,6 @@ Figaro Object | Free Threaded?
 3. If @Figaro.XQueryResolver.ResolveExternalFunction(Figaro.XmlTransaction,Figaro.XmlManager,System.String,System.String,System.UInt64) returns a new object, then it is not free-threaded. However, if the application is multi-threaded and @Figaro.XQueryResolver.ResolveExternalFunction(Figaro.XmlTransaction,Figaro.XmlManager,System.String,System.String,System.UInt64) returns a shared instance, then it is free-threaded.
 4. If an application uses multiple threads, custom implementations of @Figaro.XQueryResolver must be free threaded to allow multiple, simultaneous calls for resolution.
 5. Access must be serialized by the application across threads of control.
-
 
 ## See Also
 

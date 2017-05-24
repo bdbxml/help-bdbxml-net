@@ -25,13 +25,10 @@ Containers also store XML documents as either whole documents or as nodes. When 
 For the node storage case, retrieval of the document still returns the document in the same formatting state (assuming you didn't modify it) as it was in when it was stored in the container. The only difference is how the document is physically held within the container. Note that node storage typically offers better performance than does whole document storage, and for this reason node storage is the default container type.
 
 
-
 ## See Also
 
-
-#### Other Resources
-[FigaroEnv](xref:Figaro.FigaroEnv)
-[Product Editions](xref:product-editions.md)
-[Introducing Indices](xref:introducing-indices.md)
-[Exploring Figaro and XQuery suing the dbxml Shell](xref:figaro-and-xquery.md)
-[The dbxml Shell](xref:the-dbxml-shell.md)
+* [FigaroEnv](xref:Figaro.FigaroEnv)
+* [Product Editions](xref:product-editions.md)
+* [Introducing Indices](xref:introducing-indices.md)
+* [Exploring Figaro and XQuery suing the dbxml Shell](xref:figaro-and-xquery.md)
+* [The dbxml Shell](xref:the-dbxml-shell.md)

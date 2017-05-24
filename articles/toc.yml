@@ -1,8 +1,6 @@
-- name: Introduction
+- name: Introducing Figaro
   href: intro.md
   items:
-    - name: Figaro Overview
-      href: figaro-overview.md
     - name: Basic Concepts
       href: basic-concepts.md
     - name: Product Editions
@@ -53,6 +51,163 @@
   items:
       - name: Project Setup
         href: project-setup.md
+      - name: XML Manager and Environments
+        href: xml-manager-and-environments.md
+        items:
+          - name: XmlManager
+            href: xmlmanager.md
+          - name: Berkeley DB Environments
+            href: berkeley-db-environments.md
+          - name: Environment Open Flags
+            href: environment-open-flags.md
+          - name: Opening and Closing Environments
+            href: opening-and-closing-environments.md
+          - name: XmlManager Instantiation and Destruction
+            href: xmlmanager-instantiation-and-destruction.md
+      - name: XmlManager and Containers
+        href: xmlmanager-and-containers.md
+        items:
+          - name: Managing Containers 
+            href: managing-containers.md
+          - name: Container Properties 
+            href: container-properties.md
+          - name: Container Types 
+            href: container-types.md
+          - name: Deleting and Renaming Containers 
+            href: deleting-and-renaming-containers.md
+          - name: Adding XML Documents to Containers 
+            href: adding-xml-documents-to-containers.md
+          - name: Input Streams and Strings 
+            href: input-streams-and-strings.md
+          - name: Adding Documents 
+            href: adding-documents.md
+          - name: Adding Metadata 
+            href: adding-metadata.md
+      - name: Using XQuery 
+        href: using-xquery.md
+        items:
+          - name: "XQuery: A Brief Introduction"
+            href: xquery-a-brief-introduction.md
+          - name: Referencing Portions of Documents Using XQuery 
+            href: referencing-portions-of-documents-using-xquery.md
+          - name: Using FLWOR 
+            href: using-flwor.md
+          - name: Retrieving Data Using XQuery 
+            href: retrieving-data-using-xquery.md
+            items:
+            - name: The Query Context 
+              href: the-query-context.md
+            - name: Defining Namespaces 
+              href: defining-namespaces.md
+            - name: Defining Variables 
+              href: defining-variables.md
+            - name: Defining the Evaluation Type 
+              href: defining-the-evaluation-type.md
+          - name: Performing Queries 
+            href: performing-queries.md
+            items:
+            - name: Metadata Based Queries 
+              href: metadata-based-queries.md
+            - name: Examining Query Results
+              href: examining-query-results.md
+          - name: Working with External Functions 
+            href: working-with-external-functions.md
+            items:
+            - name: Implementing XmlExternalFunction 
+              href: implementing-xmlexternalfunction.md
+            - name: Implementing XQueryResolver 
+              href: implementing-xqueryresolver.md
+            - name: Calling External Functions from XQuery 
+              href: calling-external-functions-from-xquery.md
+          - name: Examining Document Query Results 
+            href: examining-document-query-results.md
+            items:
+              - name: Examining Document Values 
+                href: examining-document-values.md
+              - name: Examining Metadata 
+                href: examining-metadata.md
+          - name: Managing XML Data in Containers 
+            href: managing-xml-data-in-containers.md
+            items:
+              - name: Deleting Records 
+                href: deleting-records.md
+              - name: Replacing XML in Records 
+                href: replacing-xml-in-records.md
+          - name: Modifying XML Data 
+            href: modifying-xml-data.md
+            items:
+              - name: Using XQuery Update 
+                href: using-xquery-update.md
+              - name: Inserting Nodes 
+                href: inserting-nodes.md
+              - name: Position Keywords 
+                href: position-keywords.md
+              - name: Insertion Rules 
+                href: insertion-rules.md
+              - name: Deleting Nodes 
+                href: deleting-nodes.md
+              - name: Replacing Nodes 
+                href: replacing-nodes.md
+              - name: Replacement Rules 
+                href: replacement-rules.md
+              - name: Renaming Nodes 
+                href: renaming-nodes.md
+              - name: Updating Functions 
+                href: updating-functions.md
+              - name: Transform Functions 
+                href: transform-functions.md
+          - name: Resolving Conflicting Updates 
+            href: resolving-conflicting-updates.md
+      - name: Using Container Compression 
+        href: using-container-compression.md
+      - name: Using Indices 
+        href: using-indices.md
+        items:
+          - name: Index Types 
+            href: index-types.md
+            items:
+              - name: Uniqueness 
+                href: uniqueness.md
+              - name: Path Types 
+                href: path-types.md
+              - name: Node Types 
+                href: node-types.md
+              - name: Key Types 
+                href: key-types.md
+              - name: Syntax Types 
+                href: syntax-types.md
+          - name: Specifying Index Nodes 
+            href: specifying-index-nodes.md
+          - name: Specifying Index Strategies 
+            href: specifying-index-strategies.md
+          - name: Indexer Processing Notes 
+            href: indexer-processing-notes.md
+          - name: Managing Indices 
+            href: managing-indices.md
+            items:
+              - name: Adding Indices 
+                href: adding-indices.md
+              - name: Deleting Indices 
+                href: deleting-indices.md
+              - name: Replacing Indices 
+                href: replacing-indices.md
+              - name: Verifying Indices Using Query Plans 
+                href: verifying-indices-using-query-plans.md
+              - name: Examining Indices 
+                href: examining-indices.md
+              - name: Working with Default Indices 
+                href: working-with-default-indices.md
+              - name: Looking Up Indexed XML Data 
+                href: looking-up-indexed-xml-data.md
+      - name: Administering Apps   
+        href: administering-apps.md
+        items:
+          - name: Temporary Files 
+            href: temporary-files.md
+          - name: A Note on Snapshot Isolation (MVCC) 
+            href: a-note-on-snapshot-isolation-mvcc.md
+          - name: Upgrading Databases 
+            href: upgrading-databases.md
       - name: Cache and Locking Size Considerations
         href: cache-and-locking-size-considerations.md
         items:
@@ -60,170 +215,6 @@
               href: selecting-a-cache-size.md
             - name: "Configuring Locking: Sizing the System"
               href: configuring-locking-sizing-the-system.md
-- name: XML Manager and Environments
-  href: xml-manager-and-environments.md
-  items:
-    - name: XmlManager
-      href: xmlmanager.md
-    - name: Berkeley DB Environments
-      href: berkeley-db-environments.md
-    - name: Environment Open Flags
-      href: environment-open-flags.md
-    - name: Opening and Closing Environments
-      href: opening-and-closing-environments.md
-    - name: XmlManager Instantiation and Destruction
-      href: xmlmanager-instantiation-and-destruction.md
-- name: XmlManager and Containers
-  href: xmlmanager-and-containers.md
-  items:
-    - name: Managing Containers 
-      href: managing-containers.md
-    - name: Container Properties 
-      href: container-properties.md
-    - name: Container Types 
-      href: container-types.md
-    - name: Deleting and Renaming Containers 
-      href: deleting-and-renaming-containers.md
-    - name: Adding XML Documents to Containers 
-      href: adding-xml-documents-to-containers.md
-    - name: Input Streams and Strings 
-      href: input-streams-and-strings.md
-    - name: Adding Documents 
-      href: adding-documents.md
-    - name: Adding Metadata 
-      href: adding-metadata.md
-- name: Using XQuery 
-  href: using-xquery.md
-  items:
-    - name: "XQuery: A Brief Introduction"
-      href: xquery-a-brief-introduction.md
-    - name: Referencing Portions of Documents Using XQuery 
-      href: referencing-portions-of-documents-using-xquery.md
-    - name: Using FLWOR 
-      href: using-flwor.md
-    - name: Retrieving Data Using XQuery 
-      href: retrieving-data-using-xquery.md
-      items:
-      - name: The Query Context 
-        href: the-query-context.md
-      - name: Defining Namespaces 
-        href: defining-namespaces.md
-      - name: Defining Variables 
-        href: defining-variables.md
-      - name: Defining the Evaluation Type 
-        href: defining-the-evaluation-type.md
-    - name: Performing Queries 
-      href: performing-queries.md
-      items:
-      - name: Metadata Based Queries 
-        href: metadata-based-queries.md
-      - name: Examining Query Results
-        href: examining-query-results.md
-    - name: Working with External Functions 
-      href: working-with-external-functions.md
-      items:
-      - name: Implementing XmlExternalFunction 
-        href: implementing-xmlexternalfunction.md
-      - name: Implementing XQueryResolver 
-        href: implementing-xqueryresolver.md
-      - name: Calling External Functions from XQuery 
-        href: calling-external-functions-from-xquery.md
-    - name: Examining Document Query Results 
-      href: examining-document-query-results.md
-      items:
-        - name: Examining Document Values 
-          href: examining-document-values.md
-        - name: Examining Metadata 
-          href: examining-metadata.md
-    - name: Managing XML Data in Containers 
-      href: managing-xml-data-in-containers.md
-      items:
-        - name: Deleting Records 
-          href: deleting-records.md
-        - name: Replacing XML in Records 
-          href: replacing-xml-in-records.md
-        - name: Modifying XML Data 
-          href: modifying-xml-data.md
-    - name: Using XQuery Update 
-      href: using-xquery-update.md
-      items:
-        - name: Inserting Nodes 
-          href: inserting-nodes.md
-        - name: Position Keywords 
-          href: position-keywords.md
-        - name: Insertion Rules 
-          href: insertion-rules.md
-        - name: Deleting Nodes 
-          href: deleting-nodes.md
-        - name: Replacing Nodes 
-          href: replacing-nodes.md
-        - name: Replacement Rules 
-          href: replacement-rules.md
-        - name: Renaming Nodes 
-          href: renaming-nodes.md
-        - name: Updating Functions 
-          href: updating-functions.md
-        - name: Transform Functions 
-          href: transform-functions.md
-    - name: Resolving Conflicting Updates 
-      href: resolving-conflicting-updates.md
-- name: Using Container Compression 
-  href: using-container-compression.md
-- name: Using Indices 
-  href: using-indices.md
-  items:
-    - name: Index Types 
-      href: index-types.md
-      items:
-        - name: Uniqueness 
-          href: uniqueness.md
-        - name: Path Types 
-          href: path-types.md
-        - name: Node Types 
-          href: node-types.md
-        - name: Key Types 
-          href: key-types.md
-        - name: Syntax Types 
-          href: syntax-types.md
-- name: Specifying Index Nodes 
-  href: specifying-index-nodes.md
-- name: Specifying Index Strategies 
-  href: specifying-index-strategies.md
-- name: Indexer Processing Notes 
-  href: indexer-processing-notes.md
-- name: Managing Indices 
-  href: managing-indices.md
-  items:
-    - name: Adding Indices 
-      href: adding-indices.md
-    - name: Deleting Indices 
-      href: deleting-indices.md
-    - name: Replacing Indices 
-      href: replacing-indices.md
-- name: Verifying Indices Using Query Plans 
-  href: verifying-indices-using-query-plans.md
-- name: Examining Indices 
-  href: examining-indices.md
-- name: Working with Default Indices 
-  href: working-with-default-indices.md
-- name: Looking Up Indexed XML Data 
-  href: looking-up-indexed-xml-data.md
-- name: Administering Apps   
-  href: administering-apps.md
-  items:
-    - name: Temporary Files 
-      href: temporary-files.md
-    - name: A Note on Snapshot Isolation (MVCC) 
-      href: a-note-on-snapshot-isolation-mvcc.md
-    - name: Upgrading Databases 
-      href: upgrading-databases.md
-- name: Design and Usage Considerations 
-  href: design-and-usage-considerations.md
-  items:
-    - name: Selecting a Cache Size 
-      href: selecting-a-cache-size.md
-    - name: "Configuring Locking: Sizing the System" 
-      href: configuring-locking-sizing-the-system.md
 - name: Getting Started with Concurrent and Transactional Processing 
   href: getting-started-with-concurrent-and-transactional-processing.md
   items:

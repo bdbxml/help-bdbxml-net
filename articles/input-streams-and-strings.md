@@ -18,7 +18,6 @@ When you add a document to a container, you must identify the location where the
 * @Figaro.XmlManager.CreateLocalFileInputStream(System.String)
 * @Figaro.Container.PutDocument(Figaro.XmlDocument,Figaro.UpdateContext)
 * @Figaro.XmlInputStream
-
 * @Figaro.XmlDocument.SetContentAsInputStream(Figaro.XmlInputStream)
 * @Figaro.XmlManager.CreateLocalFileInputStream(System.String)
 * @Figaro.XmlManager

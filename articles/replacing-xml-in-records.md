@@ -12,12 +12,12 @@ If you already have code in place to perform document modifications, then replac
 
 You can directly replace a document that exists in a container. To do this:
 
-* Retrieve the document from the container. Either do this using an XQuery query and iterating through the results set looking for the document that you want to replace, or use @Figaro.Container.GetDocument to retrieve the document by its name. Either way, make sure you have the document as an @Figaro.XmlDocument object.
+* Retrieve the document from the container. Either do this using an XQuery query and iterating through the results set looking for the document that you want to replace, or use @Figaro.Container.GetDocument(System.String) to retrieve the document by its name. Either way, make sure you have the document as an @Figaro.XmlDocument object.
 * Use @Figaro.XmlDocument.SetContent(System.String) or @Figaro.XmlDocument.SetContentAsInputStream(Figaro.XmlInputStream) to set the object's content to the desired value.
-* Use @Figaro.Container.UpdateDocument to save the modified document back to the container.
+* Use @Figaro.Container.UpdateDocument(Figaro.XmlDocument,Figaro.UpdateContext) to save the modified document back to the container.
 
 >[!NOTE]
->Alternatively, you can create a new blank document using @Figaro.XmlManager.CreateDocument, set the document's name to be identical to a document already existing in the container, set the document's content to the desired content, then call @Figaro.Container.UpdateDocument.
+>Alternatively, you can create a new blank document using @Figaro.XmlManager.CreateDocument(System.Xml.XmlReader), set the document's name to be identical to a document already existing in the container, set the document's content to the desired content, then call @Figaro.Container.UpdateDocument.
 
 ``` C#
 using (var mgr = new XmlManager())
@@ -31,10 +31,9 @@ using (var mgr = new XmlManager())
 }
 ```
 
-
 ## See Also
 
 * @Figaro.XmlDocument.SetContent(Figaro.XmlData)
-* @Figaro.XmlManager.CreateDocument
+* @Figaro.XmlManager.CreateDocument(System.Xml.XmlReader)
 * @Figaro.Container.UpdateDocument(Figaro.XmlDocument,Figaro.UpdateContext)
 * [Managing XML Data in Containers](xref:managing-xml-data-in-containers.md)

@@ -25,4 +25,5 @@ This section contains the following topics:
 
 ## See Also
 
-@Figaro.Container@Figaro.XmlDocument
+* @Figaro.Container
+* @Figaro.XmlDocument

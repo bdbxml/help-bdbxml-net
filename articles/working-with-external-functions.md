@@ -8,9 +8,9 @@ Figaro allows you to define your own functions using the .NET Framework that you
 
 
 ## In This Section
-[Implementing XmlExternalFunction](xref:implementing-xmlexternalfunction.md)
-[Implementing XQueryResolver](xref:implementing-xqueryresolver.md)
-[Calling External Functions from XQuery](xref:calling-external-functions-from-xquery.md)
+* [Implementing XmlExternalFunction](xref:implementing-xmlexternalfunction.md)
+* [Implementing XQueryResolver](xref:implementing-xqueryresolver.md)
+* [Calling External Functions from XQuery](xref:calling-external-functions-from-xquery.md)
 
 
 ## See Also

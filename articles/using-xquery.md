@@ -20,8 +20,6 @@ We follow this brief introduction to XQuery with a general description of queryi
 
 ## In This Section
 
-This section contains the following topics:
-
 
  * [XQuery: A Brief Introduction](xquery-a-brief-introduction.md) 
  * [Referencing Portions of Documents Using XQuery](xref:referencing-portions-of-documents-using-xquery.md) 

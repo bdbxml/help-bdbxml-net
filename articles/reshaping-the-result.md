@@ -41,7 +41,7 @@ dbxml> print
 
 The following shows the previous HTML as displayed in a web browser:
 
-[Reshaping sample](/images/reshaping-sample.png)
+![Reshaping sample](/images/reshaping-sample.png)
 
 This XQuery introduces the XQuery FLWOR expression (For, Let, While, Order by, Return — sometimes written as FLWR or FLOWR). Note that XPath is still used in the query, but now as part of the overall FLWOR structure.
 

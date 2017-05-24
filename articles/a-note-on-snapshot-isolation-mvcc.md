@@ -15,8 +15,8 @@ For more information, see the [Getting Started with Concurrent and Transactional
 
 ## See Also
 
-* @Figaro.EnvConfig.SnapshotTransaction
-* @Figaro.TransactionType.SnapshotTransaction
+* @Figaro.EnvConfig.SnapshotTransaction (@Figaro.EnvConfig)
+* @Figaro.TransactionType.SnapshotTransaction (@Figaro.TransactionType)
 
 #### Other Resources
 * [Administering Apps](xref:administering-apps.md)

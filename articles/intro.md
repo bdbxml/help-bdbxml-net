@@ -1,14 +1,14 @@
 ---
 uid: intro.md
 ---
-
+<!--
 # Introducing Figaro
 
 The Figaro XML Database is an embedded, native XML database specifically designed for the storage and retrieval of XML-formatted documents and data using the Microsoft .NET Framework. Built on the award-winning Berkeley DB database library, Figaro supports efficient queries against millions of XML documents using XQuery 1.0. XQuery is a W3C query language designed for the examination and retrieval of portions of XML documents.
 
 
 ![Figaro and the Oracle Berkeley DB Product Family](/images/ProductStack.png)
-
+-->
 
 ## Figaro and the Oracle Berkeley DB Product Family
 

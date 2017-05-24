@@ -39,12 +39,11 @@ XQuery also provides a full set of expressions that you can use to select docume
 
 >[!NOTE]
 > This query is searching on the value of an _attribute_ rather than the value of an _element_. This is an equally valid way to search for documents.
-```
-dbxml> query '
-collection("parts.dbxml")/part[@number = 1070 or @number = 1032]'
 
-2 objects returned for eager expression '
-collection("parts.dbxml")/part[@number = 1070 or @number = 1032]'
+```
+dbxml> query 'collection("parts.dbxml")/part[@number = 1070 or @number = 1032]'
+
+2 objects returned for eager expression 'collection("parts.dbxml")/part[@number = 1070 or @number = 1032]'
 
 dbxml> print
 <part number="1070"><description>Description of 1070</description>
@@ -56,11 +55,9 @@ dbxml> print
 Standard inequality operators and other expressions are also available and help to isolate the required subset of data within a container:
 
 ```
-dbxml> query '
-collection("parts.dbxml")/part[@number > 100 and @number < 105]'
+dbxml> query 'collection("parts.dbxml")/part[@number > 100 and @number < 105]'
 
-4 objects returned for eager expression '
-collection("parts.dbxml")/part[@number > 100 and @number < 105]'
+4 objects returned for eager expression 'collection("parts.dbxml")/part[@number > 100 and @number < 105]'
 
 dbxml> print
 <part number="101"><description>Description of 101</description>
@@ -74,6 +71,7 @@ dbxml> print
 ```
 
 #### Other Resources
+
 * [Fiagro and XQuery](xref:figaro-and-xquery.md)
 * [The dbxml Shell](xref:the-dbxml-shell.md)
 * [Using XQuery](xref:using-xquery.md)

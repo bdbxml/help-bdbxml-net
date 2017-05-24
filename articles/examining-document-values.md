@@ -26,7 +26,8 @@ For example, suppose you have an address book product that manages individual co
 Then you could retrieve individual documents and pull data off of them like this:
 
 ``` C#
-        private const string data = &quot;&lt;contact&gt;&lt;familiarName&gt;John&lt;/familiarName&gt;&lt;surname&gt;Doe&lt;/surname&gt;&lt;phone work=\&quot;555 555 5555\&quot; home=\&quot;555 666 777\&quot; /&gt;&lt;address&gt;&lt;street&gt;1122 Somewhere Lane&lt;/street&gt;&lt;city&gt;Nowhere&lt;/city&gt;&lt;state&gt;Minnesota&lt;/state&gt;&lt;zipcode&gt;11111&lt;/zipcode&gt;&lt;/address&gt;&lt;/contact&gt;&quot;;
+        private const string data = "<contact><familiarName>John</familiarName><surname>Doe</surname><phone work=\"555 555 5555\" home=\"555 666 777\" /><address><street>1122 Somewhere Lane</street><city>Nowhere</city><state>Minnesota</state><zipcode>11111</zipcode></address></contact>";
+
 	    var mgr = new XmlManager(ManagerInitOptions.AllowAutoOpen);
 	    var cfg = new ContainerConfig
 	                  {
@@ -122,9 +123,6 @@ However, in this case change the query so that you reference the self access. Th
 distinct-values(./surname)
 ```
 
-
 ## See Also
 
-
-#### Other Resources
-[examining-query-results]
+@examining-query-results.md

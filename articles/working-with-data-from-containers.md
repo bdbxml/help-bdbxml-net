@@ -2,7 +2,7 @@
 uid: working-with-data-from-containers.md
 ---
 
-# Working with Data from Multiple Containers
+# Working with Data from Containers
 
 An application may use one or more containers. Figaro and XQuery provide excellent support for this situation. First, create a second container and add some additional data. A few simple documents will be enough to demonstrate this feature. To begin, we add them the new container:
 

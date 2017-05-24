@@ -36,7 +36,7 @@ Note that by default, containers of type @Figaro.XmlContainerType.NodeContainer 
 You can tell whether a container is using node-level indices using the method. If the container is creating node-level indices, this method will return true.
 
 
-You can switch between node-level indices and document-level indices using @Figaro.XmlManager.ReindexContainer. Specify @Figaro.ReindexOptions.IndexNodes to cause a the container to use node-level indices. To switch from node-level to document-level indices, use @Figaro.ReindexOptions.NoIndexNodes.
+You can switch between node-level indices and document-level indices using @Figaro.XmlManager.ReindexContainer(System.String,Figaro.UpdateContext,Figaro.ReindexOptions). Specify @Figaro.ReindexOptions.IndexNodes to cause a the container to use node-level indices. To switch from node-level to document-level indices, use @Figaro.ReindexOptions.NoIndexNodes.
 
 >[!NOTE]
 >This method causes your container to be completely re-indexed. Therefore, for containers containing large amount of data, or large numbers of indices, or both, this method should not be used routinely as it may take some time to write the new indices.
@@ -45,7 +45,7 @@ You can switch between node-level indices and document-level indices using @Figa
 
 
 #### Reference
-* @Figaro.XmlManager.ReindexContainer(Figaro.XmlTransaction, System.String, Figaro.UpdateContext, Figaro.ReindexOptions)
+* @Figaro.XmlManager.ReindexContainer(System.String,Figaro.UpdateContext,Figaro.ReindexOptions)
 * @Figaro.ReindexOptions
 * @Figaro.XmlContainerType
 

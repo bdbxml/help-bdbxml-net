@@ -47,5 +47,6 @@ For example:
 * @Figaro.XmlManager.ExistsContainer(System.String)
 * @Figaro.XmlManager.CreateContainer(Figaro.ContainerConfig)
 * @Figaro.XmlManager.OpenContainer(Figaro.ContainerConfig)
-* @Figaro.Container@Figaro.XmlManager.OpenContainer(Figaro.ContainerConfig)
+* @Figaro.Container
+* @Figaro.XmlManager.OpenContainer(Figaro.ContainerConfig)
 * [XmlManager and Containers](xref:xmlmanager-and-containers.md)
