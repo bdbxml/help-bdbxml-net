@@ -96,6 +96,7 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>$(BUILD_STAGINGDIRECTORY)\$(Platform)\win32\Figaro.Configuration.XML</DocumentationFile>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugDS|x86' ">
     <OutputPath>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\</OutputPath>
@@ -103,6 +104,7 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\Figaro.Configuration.XML</DocumentationFile>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugTDS|x86' ">
     <OutputPath>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\</OutputPath>
@@ -110,6 +112,7 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\Figaro.Configuration.XML</DocumentationFile>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseCDS|x86' ">
     <OutputPath>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\</OutputPath>
@@ -118,6 +121,7 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\Figaro.Configuration.XML</DocumentationFile>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseDS|x86' ">
     <OutputPath>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\</OutputPath>
@@ -126,6 +130,7 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\Figaro.Configuration.XML</DocumentationFile>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTDS|x86' ">
     <OutputPath>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\</OutputPath>
@@ -134,6 +139,7 @@
     <DocumentationFile>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\Figaro.Configuration.XML</DocumentationFile>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
     <RootNamespace>Figaro.Configuration</RootNamespace>
@@ -158,7 +164,7 @@
     <DocumentationFile>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\Figaro.Configuration.XML</DocumentationFile>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -179,16 +185,18 @@
     <DefineConstants>TRACE;DEBUG;HA</DefineConstants>
     <BaseAddress>286064640</BaseAddress>
     <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <DocumentationFile>$(BUILD_STAGINGDIRECTORY)\win32\$(Configuration)\Figaro.Configuration.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Figaro.config" />
     <None Include="HA\FigaroConfigSchema.xsd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="TDS\FigaroConfigSchema.xsd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -198,6 +206,18 @@
     <None Include="DS\FigaroConfigSchema.xsd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Reference Include="Desaware.Dls.Interfaces40, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c8956dcc7a600871, processorArchitecture=MSIL">
+      <HintPath>packages\FHAN.x64.6.0.18.291\lib\x64\Desaware.Dls.Interfaces40.dll</HintPath>
+    </Reference>
+    <Reference Include="Desaware.MachineLicense40, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c8956dcc7a600871, processorArchitecture=MSIL">
+      <HintPath>packages\FHAN.x64.6.0.18.291\lib\x64\Desaware.MachineLicense40.DLL</HintPath>
+    </Reference>
+    <Reference Include="Figaro, Version=6.0.18.999, Culture=neutral, PublicKeyToken=f6f39be683afad89, processorArchitecture=AMD64">
+      <HintPath>packages\FHAN.x64.6.0.18.291\lib\x64\Figaro.dll</HintPath>
+    </Reference>
+    <Reference Include="Figaro.Configuration, Version=6.0.18.0, Culture=neutral, PublicKeyToken=a69423a247fee477, processorArchitecture=AMD64">
+      <HintPath>packages\FHAN.x64.6.0.18.291\lib\x64\Figaro.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -209,18 +229,12 @@
     </Reference>
     <Reference Include="System.Xml" />
     <Compile Include="ConfigurationSectionCode.cs" />
-    <Compile Include="ContainerConfigFactory.cs" />
-    <Compile Include="EnvFactory.cs" />
-    <Compile Include="SectionFactory.cs" />
-    <Compile Include="ManagerFactory.cs" />
-    <Compile Include="PathUtility.cs" />
+    <Compile Include="Factory\ContainerConfigFactory.cs" />
+    <Compile Include="Factory\EnvFactory.cs" />
+    <Compile Include="Factory\SectionFactory.cs" />
+    <Compile Include="Factory\ManagerFactory.cs" />
+    <Compile Include="Factory\PathUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="FigaroConfigSample.config">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="README.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -233,12 +247,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Figaro\Figaro.csproj">
-      <Project>{912c1549-32fc-4e6e-8c0e-f7f7814a11b5}</Project>
-      <Name>Figaro</Name>
-    </ProjectReference>
   </ItemGroup>
   <Target Name="BeforeBuild">
   </Target>

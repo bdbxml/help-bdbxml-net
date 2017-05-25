@@ -7,6 +7,7 @@
 * 
 *************************************************************************************************/
 #pragma warning disable 1574
+#pragma warning disable 0436
 
 using System.Configuration;
 

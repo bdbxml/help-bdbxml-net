@@ -1,3 +1,7 @@
+---
+uid: recovery-for-multi-threaded-applications.md
+---
+
 # Recovery for Multi-Threaded Applications
 
 If your application uses only one environment handle, then handling recovery for a multi-threaded application is no more difficult than for a single threaded application. You simply open the environment in the application's main thread, and then pass that handle to each of the threads that will be performing Figaro operations. We illustrate this with our final example in the documentation (see [Transaction Example](xref:transaction-example.md) for more information).

@@ -1,4 +1,7 @@
-﻿/*************************************************************************************************
+﻿#pragma warning disable 1574
+#pragma warning disable 0436
+
+/*************************************************************************************************
 * 
 * THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
 * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
@@ -9,7 +12,7 @@
 using System;
 using System.Configuration;
 
-namespace Figaro.Configuration
+namespace Figaro.Configuration.Factory
 {
     /// <summary>
     /// Creates <see cref="XmlManager"/> instances from configuration.

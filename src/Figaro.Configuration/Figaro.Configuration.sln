@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figaro.Configuration", "Figaro.Configuration.csproj", "{BD1E3EDE-2321-46CD-9EFB-EE47973EDFA2}"
 EndProject
@@ -50,6 +50,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BD1E3EDE-2321-46CD-9EFB-EE47973EDFA2}.DebugCDS|Any CPU.ActiveCfg = DebugCDS|x86
+		{BD1E3EDE-2321-46CD-9EFB-EE47973EDFA2}.DebugCDS|Any CPU.Build.0 = DebugCDS|x86
 		{BD1E3EDE-2321-46CD-9EFB-EE47973EDFA2}.DebugCDS|Mixed Platforms.ActiveCfg = DebugCDS|x86
 		{BD1E3EDE-2321-46CD-9EFB-EE47973EDFA2}.DebugCDS|Mixed Platforms.Build.0 = DebugCDS|x86
 		{BD1E3EDE-2321-46CD-9EFB-EE47973EDFA2}.DebugCDS|Win32.ActiveCfg = DebugCDS|x86

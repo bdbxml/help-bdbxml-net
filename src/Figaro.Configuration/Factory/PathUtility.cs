@@ -12,7 +12,7 @@ using System.Diagnostics;
 using System;
 using System.IO;
 using System.Web.Hosting;
-namespace Figaro.Configuration
+namespace Figaro.Configuration.Factory
 {
     /// <summary>
     /// Used to resolve the file paths containing environment variables.
