@@ -185,6 +185,8 @@
           - name: Managing Indices 
             href: managing-indices.md
             items:
+              - name: Using the Query Plan Optimizer Log Output
+                href: using-the-query-plan.md
               - name: Adding Indices 
                 href: adding-indices.md
               - name: Deleting Indices 

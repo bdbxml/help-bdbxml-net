@@ -387,6 +387,11 @@ namespace Figaro
         public event EventHandler<ErrEventArgs> OnErr;
 
         /// <summary>
+        /// The event generated when the backup operation comes to a close.
+        /// </summary>
+        public event EventHandler<BackupCloseArgs> OnBackupClose;
+
+        /// <summary>
         /// Raised to notify the process of specific Figaro events.
         /// </summary>
         /// <remarks>

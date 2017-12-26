@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Figaro</RootNamespace>
-    <AssemblyName>FigaroStub</AssemblyName>
+    <AssemblyName>Figaro</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -36,7 +36,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE;FIGARO25;TDS</DefineConstants>
-    <DocumentationFile>bin\Release\FigaroStub.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Figaro.xml</DocumentationFile>
     <Optimize>false</Optimize>
     <DebugType>none</DebugType>
     <PlatformTarget>x86</PlatformTarget>
@@ -47,7 +47,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE;FIGARO25;TDS;HA</DefineConstants>
-    <DocumentationFile>bin\Release\FigaroStub.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Figaro.xml</DocumentationFile>
     <Optimize>false</Optimize>
     <DebugType>none</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -69,7 +69,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseTDS|x64'">
     <OutputPath>bin\x64\ReleaseTDS\</OutputPath>
     <DefineConstants>FIGARO25;TDS;HA</DefineConstants>
-    <DocumentationFile>bin\x64\ReleaseTDS\FigaroStub.xml</DocumentationFile>
+    <DocumentationFile>bin\x64\ReleaseTDS\Figaro.xml</DocumentationFile>
     <Optimize>false</Optimize>
     <DebugType>none</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -91,7 +91,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDS|x64'">
     <OutputPath>bin\x64\DebugDS\</OutputPath>
     <DefineConstants>TRACE;FIGARO25;TDS;HA</DefineConstants>
-    <DocumentationFile>bin\x64\DebugDS\FigaroStub.xml</DocumentationFile>
+    <DocumentationFile>bin\x64\DebugDS\Figaro.xml</DocumentationFile>
     <Optimize>false</Optimize>
     <DebugType>none</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -135,7 +135,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugHA|x64'">
     <OutputPath>bin\x64\DebugHA\</OutputPath>
     <DefineConstants>TRACE;FIGARO25;TDS;HA</DefineConstants>
-    <DocumentationFile>bin\x64\DebugHA\FigaroStub.xml</DocumentationFile>
+    <DocumentationFile>bin\x64\DebugHA\Figaro.xml</DocumentationFile>
     <Optimize>false</Optimize>
     <DebugType>none</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -151,7 +151,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseCDS|x64'">
     <OutputPath>bin\x64\ReleaseCDS\</OutputPath>
     <WarningLevel>0</WarningLevel>
-    <DocumentationFile>bin\x64\ReleaseCDS\FigaroStub.xml</DocumentationFile>
+    <DocumentationFile>bin\x64\ReleaseCDS\Figaro.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDS|x86'">
     <OutputPath>bin\x86\ReleaseDS\</OutputPath>
@@ -167,7 +167,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDS|x64'">
     <OutputPath>bin\x64\ReleaseDS\</OutputPath>
     <DefineConstants>TRACE;FIGARO25;TDS;HA</DefineConstants>
-    <DocumentationFile>bin\x64\ReleaseDS\FigaroStub.xml</DocumentationFile>
+    <DocumentationFile>bin\x64\ReleaseDS\Figaro.xml</DocumentationFile>
     <Optimize>false</Optimize>
     <DebugType>none</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -189,7 +189,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseHA|x64'">
     <OutputPath>bin\x64\ReleaseHA\</OutputPath>
     <DefineConstants>TRACE;FIGARO25;TDS;HA</DefineConstants>
-    <DocumentationFile>bin\x64\ReleaseHA\FigaroStub.xml</DocumentationFile>
+    <DocumentationFile>bin\x64\ReleaseHA\Figaro.xml</DocumentationFile>
     <Optimize>false</Optimize>
     <DebugType>none</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -209,7 +209,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugTDS|x64'">
     <OutputPath>bin\x64\DebugTDS\</OutputPath>
     <DefineConstants>TRACE;FIGARO25;TDS;HA</DefineConstants>
-    <DocumentationFile>bin\x64\DebugTDS\FigaroStub.xml</DocumentationFile>
+    <DocumentationFile>bin\x64\DebugTDS\Figaro.xml</DocumentationFile>
     <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>

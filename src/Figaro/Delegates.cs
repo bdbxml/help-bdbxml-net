@@ -40,6 +40,12 @@ namespace Figaro
         /// <summary>Gets the content of the event message.</summary>
         /// <value>The content of the event message.</value>
         public string Message { get;  private set; }
+
+        /// <summary>
+        /// Gets the message prefix.
+        /// </summary>
+        /// <value>The message prefix value, if any.</value>
+        public string Prefix { get; private set; }
     }
 
     /// <summary>
@@ -148,6 +154,13 @@ namespace Figaro
         public bool MutexProcessOnly { get; set; }
     }
 
+    /// <summary>
+    /// The arguments to the <see cref="FigaroEnv.OnErr"/>
+    /// </summary>
+    public class BackupCloseArgs : EventArgs
+    {
+        public string DatabaseName { get; set; }
+    }
 
     /// <summary>The event message handler for the <see cref="FigaroEnv.OnMessage"/> event.</summary>
     /// <param name="sender">The calling <see cref="FigaroEnv"/> object.</param>

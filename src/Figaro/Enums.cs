@@ -97,12 +97,14 @@ namespace Figaro
         /// <summary>
         /// The remote replication site is connected and/or online.
         /// </summary>
-        Connected = 0x01,
+        Connected = 1,
         /// <summary>
         /// The remote replication site is disconnected and/or offline.
         /// </summary>
-        Disconnected = 0x02
+        Disconnected = 2
     }
+
+    
     /// <summary>
     /// Some acknowledgment policies use the concept of an electable peer, which is a client 
     /// capable of being subsequently elected master of the replication group. 
@@ -1096,6 +1098,7 @@ namespace Figaro
         /// </summary>
         UseEnvironmentRoot
     }
+    
     /// <summary>
     /// Used by <see cref="FigaroException"/> to determine errors and
     /// error codes encountered during the course of operation.
@@ -1202,6 +1205,8 @@ namespace Figaro
         /// <summary>Database version mismatch.</summary>
         DatabaseVersionMismatch // Equates to DB_VERSION_MISMATCH
     }
+
+
     //https://docs.oracle.com/cd/E17276_01/html/programmer_reference/rep_partview.html
     /// <summary>
     /// Flags for whether the replication site is a partial or full replication view, or not a replication view at all.

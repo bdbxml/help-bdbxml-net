@@ -46,7 +46,7 @@ namespace Figaro
         /// <param name="containerOptions">The container configuration options.</param>
         /// <returns>A new container instance.</returns>
         public Container CreateContainer(ContainerConfig containerOptions)
-        {
+        {            
             return null;
         }
 
