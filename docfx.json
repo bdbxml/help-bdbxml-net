@@ -5,22 +5,19 @@
         {
           "files": [
             "src/**.csproj"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "**/.vs/**",
-            "_site/**",
-            "**/.git/**",
-            ".gitattributes",
-            ".gitignore"
           ]
         }
       ],
-      "dest": "api"
+      "dest": "api",
+      "disableGitFeatures": false
     }
   ],
   "build": {
+    "sitemap":{
+      "baseUrl": "http://help.bdbxml.net/",
+      "priority": 0.6,
+      "changefreq": "monthly"
+      },      
     "content": [
       {
         "files": [
@@ -34,13 +31,6 @@
           "articles/**/toc.yml",
           "toc.yml",
           "*.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**",
-            "**/.git/**",
-            ".gitattributes",
-            ".gitignore"
         ]
       }
     ],
@@ -48,13 +38,6 @@
       {
         "files": [
           "images/**"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**",
-            "**/.git/**",
-            ".gitattributes",
-            ".gitignore"
         ]
       }
     ],
@@ -65,10 +48,7 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**",
-            "**/.git/**",
-            ".gitattributes",
-            ".gitignore"
+          "_site/**"
         ]
       }
     ],
@@ -76,9 +56,12 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "_exported_templates/default"
+      "default"
     ],
     "postProcessors": [],
-    "noLangKeyword": false
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
   }
 }
